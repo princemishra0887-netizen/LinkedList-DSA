@@ -11,9 +11,11 @@ public class addMiddle {
     }
         public static Node head;
         public static Node tail;
+        public static int size;
 
         public void addMiddle(int idx, int data) {
             Node newNode = new Node(data);
+            size++;
             if (head == null) {
                 head = tail = newNode;
                 return;
@@ -53,7 +55,8 @@ public class addMiddle {
             ll.addMiddle(4,5);
             ll.addMiddle(2,8);
 
-         ll.print();
+          // ll.print();
+           System.out.print(ll.size);
         }
     
     }
